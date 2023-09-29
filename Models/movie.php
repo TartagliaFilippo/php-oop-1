@@ -25,4 +25,8 @@ class movie
     $this->length = $length;
     $this->title = $title;
   }
+  public function getFullElement()
+  {
+    return "$this->genre, $this->length, $this->title ";
+  }
 }

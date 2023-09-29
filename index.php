@@ -8,4 +8,4 @@ $new_movie = new movie(
   'Non aprite quella porta',
 );
 
-var_dump($new_movie);
+var_dump($new_movie->getFullElement());
