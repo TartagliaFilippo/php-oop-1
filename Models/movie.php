@@ -10,6 +10,19 @@ class movie
 
   public $length;
 
-  public $plot;
+  public $title;
 
+
+
+  public function __construct(
+
+    string $genre,
+    string $length,
+    string $title,
+
+  ) {
+    $this->genre = $genre;
+    $this->length = $length;
+    $this->title = $title;
+  }
 }
