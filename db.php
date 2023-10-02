@@ -1,8 +1,8 @@
 <?php
 
+require __DIR__ . './Models/production.php';
 require __DIR__ . './Models/movie.php';
 require __DIR__ . './Models/genre.php';
-require __DIR__ . './Models/production.php';
 require __DIR__ . './Models/tvserie.php';
 
 $production_test = new Production(

@@ -6,7 +6,6 @@
 
 class TvSerie extends Production
 {
-
   public $aired_from_year;
 
   public $aired_to_year;
