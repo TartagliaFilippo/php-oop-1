@@ -22,4 +22,9 @@ class Production
     $this->title = $title;
     $this->description = $description;
   }
+
+  public function getDetails()
+  {
+    return "$this->genre,  $this->title, $this->description";
+  }
 }

@@ -3,6 +3,7 @@
 require __DIR__ . './Models/movie.php';
 require __DIR__ . './Models/genre.php';
 require __DIR__ . './Models/production.php';
+require __DIR__ . './Models/tvserie.php';
 
 $genreList = ['Commedia', 'Horror'];
 
@@ -22,6 +23,16 @@ $production_test = new Production(
   'horror',
   'matrix',
   'film ambientato nel 2.....',
+);
+
+$tv_series_test = new TvSerie(
+  'commedia',
+  'natale bla bla',
+  'film ambientato nel 2.....',
+  1990,
+  2003,
+  1268,
+  18,
 );
 
 $movies = [$movie_1, $movie_2];
