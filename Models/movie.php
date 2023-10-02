@@ -4,7 +4,7 @@
  * Define a movie
  * @author Filippo Tartaglia
  */
-class movie
+class Movie
 {
   public $genre;
 
@@ -16,17 +16,28 @@ class movie
 
   public function __construct(
 
-    string $genre,
-    string $length,
+    array $genres = null,
+    float $length,
     string $title,
 
   ) {
-    $this->genre = $genre;
+    $this->genre = $genres;
     $this->length = $length;
     $this->title = $title;
   }
   public function getFullElement()
   {
-    return "$this->genre, $this->length, $this->title ";
+    $genre_text = $this->getStringText();
+
+    return " $genre_text, $this->length, $this->title ";
+  }
+
+  public function getStringText()
+  {
+    $genres_text = '';
+    foreach ($this->genre as $genres) {
+      $genres_text .= $genres . ' ';
+    }
+    return $genres_text;
   }
 }
