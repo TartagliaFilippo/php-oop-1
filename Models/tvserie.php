@@ -33,12 +33,12 @@ class TvSerie extends Production
   public function getDetails()
   {
     return "
-    <strong>Genere:</strong> $this->genre, 
-    <strong>Titolo:</strong> $this->title, 
-    <strong>Descrizione:</strong> $this->description, 
-    <strong>Prima messa in onda:</strong> $this->aired_from_year, 
-    <strong>Trasmesso fino al:</strong> $this->aired_to_year, 
-    <strong>Numero di episodi:</strong> $this->number_of_episodes, 
-    <strong>Numero di stagioni:</strong> $this->number_of_seasons";
+    <p><strong>Genere:</strong> $this->genre</p> 
+    <h5><strong>Titolo:</strong> $this->title</h5> 
+    <p><strong>Descrizione:</strong> $this->description</p> 
+    <p><strong>Prima messa in onda:</strong> $this->aired_from_year</p>
+    <p><strong>Trasmesso fino al:</strong> $this->aired_to_year</p>
+    <p><strong>Numero di episodi:</strong> $this->number_of_episodes</p> 
+    <p><strong>Numero di stagioni:</strong> $this->number_of_seasons</p>";
   }
 }

@@ -28,3 +28,9 @@ $movie_test = new Movie(
   1990,
   120,
 );
+
+$productions_list = [
+  $production_test,
+  $tv_series_test,
+  $movie_test
+];

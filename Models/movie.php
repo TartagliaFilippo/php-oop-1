@@ -9,14 +9,6 @@ class Movie extends Production
 
   public $running_time;
 
-  /**
-   * Summary of __construct
-   * @param string $genre
-   * @param string $title
-   * @param string $description
-   * @param int $published_year
-   * @param int $running_time
-   */
   public function __construct(
     string $genre,
     string $title,
@@ -36,10 +28,10 @@ class Movie extends Production
   public function getDetails()
   {
     return "
-    <strong>Genere:</strong> $this->genre, 
-    <strong>Titolo:</strong> $this->title, 
-    <strong>Descrizione:</strong> $this->description, 
-    <strong>Anno di pubblicazione:</strong> $this->published_year,
-    <strong>Anno di pubblicazione:</strong> $this->running_time";
+    <p><strong>Genere:</strong> $this->genre</p> 
+    <h5><strong>Titolo:</strong> $this->title</h5> 
+    <p><strong>Descrizione:</strong> $this->description</p> 
+    <p><strong>Anno di pubblicazione:</strong> $this->published_year</p>
+    <p><strong>Anno di pubblicazione:</strong> $this->running_time</p>";
   }
 }

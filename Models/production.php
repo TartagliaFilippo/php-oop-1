@@ -25,6 +25,9 @@ class Production
 
   public function getDetails()
   {
-    return "$this->genre,  $this->title, $this->description";
+    return "
+    <p><strong>Genere:</strong> $this->genre</p> 
+    <h5><strong>Titolo:</strong> $this->title</h5> 
+    <p><strong>Descrizione:</strong> $this->description</p>";
   }
 }
