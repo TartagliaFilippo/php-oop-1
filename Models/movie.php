@@ -2,42 +2,32 @@
 /**
  * *Class Movie
  * Define a movie
- * @author Filippo Tartaglia
  */
-class Movie
+class Movie extends Production
 {
-  public $genre;
+  public $published_year;
 
-  public $length;
-
-  public $title;
-
-
+  public $running_time;
 
   public function __construct(
-
-    array $genres = null,
-    float $length,
+    string $genre,
     string $title,
+    string $description,
+    int $published_year,
+    int $running_time,
 
   ) {
-    $this->genre = $genres;
-    $this->length = $length;
-    $this->title = $title;
+    parent::__construct($genre, $title, $description);
+    $this->published_year = $published_year;
+    $this->running_time = $running_time;
   }
-  public function getFullElement()
+  public function getDetails()
   {
-    $genre_text = $this->getStringText();
-
-    return " $genre_text, $this->length, $this->title ";
-  }
-
-  public function getStringText()
-  {
-    $genres_text = '';
-    foreach ($this->genre as $genres) {
-      $genres_text .= $genres . ' ';
-    }
-    return $genres_text;
+    return "
+    <strong>Genere:</strong> $this->genre, 
+    <strong>Titolo:</strong> $this->title, 
+    <strong>Descrizione:</strong> $this->description, 
+    <strong>Anno di pubblicazione:</strong> $this->published_year,
+    <strong>Anno di pubblicazione:</strong> $this->running_time";
   }
 }

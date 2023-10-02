@@ -17,16 +17,14 @@ include 'db.php';
   <h1>Films</h1>
 
   <ul>
-    <?php foreach ($movies as $movie): ?>
-      <li>
-        <?php echo $movie->getFullElement() ?>
-      </li>
-    <?php endforeach; ?>
     <li>
       <?php echo $production_test->getDetails() ?>
     </li>
     <li>
       <?php echo $tv_series_test->getDetails() ?>
+    </li>
+    <li>
+      <?php echo $movie_test->getDetails() ?>
     </li>
   </ul>
 </body>

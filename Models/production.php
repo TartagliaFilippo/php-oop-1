@@ -2,8 +2,8 @@
 
 /**
  * *Class Production
+ * @author Filippo Tartaglia
  */
-
 class Production
 {
 
